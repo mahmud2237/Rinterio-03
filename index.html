@@ -22,9 +22,10 @@
                         primary: '#ABEF5F',
                         secondary: '#ABEF5F80',
                         tertiary: '#ABEF5F33',
-                        gray6: '#212121',
                         gray1: '#E9E9E9',
-                        rgb: 'rgb(28, 28, 28)',
+                        gray6: '#212121',
+                        rgb1: 'rgb(28, 28, 28)',
+                        white: '#FFF',
                     },
                     fontFamily: {
                         Manrope: ['Manrope', 'Arial', 'sans-serif'],
@@ -44,15 +45,17 @@
 </head>
 
 <body class="font-Manrope">
-    <header class="container mx-auto">
-        <nav class="w-11/12 mx-auto">
-            <div class="navbar mx-auto flex gap-3 justify-between items-center">
+    <!-- Header Section Starts Here -->
+    <header class="container w-11/12 mx-auto mb-12">
+        <nav>
+            <div class="navbar mx-auto flex justify-between items-center">
                 <div class="flex gap-3">
-                    <a href="#" class="text-3xl"><i class="fa-solid fa-circle-arrow-up rotate-45 text-primary bg-rgb rounded-full"></i><span>Rinterio</span></a>
+                    <a href="#" class="text-3xl font-extrabold"><i
+                            class="fa-solid fa-circle-arrow-up rotate-45 text-primary bg-rgb1 rounded-full"></i><span>Rinterio</span></a>
                 </div>
 
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal px-1 text-rgb1">
                         <li><a>Home</a></li>
                         <li><a>Services</a></li>
                         <li><a>Portfolio</a></li>
@@ -60,23 +63,68 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="hidden lg:block">
-                    <button class="btn bg-primary rounded-full">Book Consult<i class="fa-solid fa-circle-arrow-up rotate-45"></i></button>
+                <div class="hidden lg:flex justify-evenly gap-6">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass rounded-full"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping rounded-full"></i></a>
+                    <button class="btn bg-primary rounded-full">Book Consult<i
+                            class="fa-solid fa-circle-arrow-up rotate-45"></i></button>
+                </div>
+                <div class="lg:hidden block">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
                 </div>
             </div>
-            <section class="">
-
+            <!-- Header content here -->
+            <section class="flex gap-5 flex-col justify-center items-center">
+                <img src="./assets/banner.png" alt="">
+                <h1 class="text-7xl font-black text-center">A barn house of this design has a striking appearance</h1>
+                <p class="font-normal text-center">A barn house of this design boasts a striking appearance with its
+                    tall, gabled roof and expansive windows. The blend of traditional materials and contemporary
+                    elements creates a captivating, warm, and inviting atmosphere.</p>
+                <button class="btn bg-secondary rounded-full">View Details<i
+                        class="fa-solid fa-circle-arrow-up rotate-45 text-primary bg-rgb1 rounded-full"></i></button>
             </section>
         </nav>
     </header>
-    <main class="container mx-auto">
-        <section class="w-11/12 mx-auto">
+    <main class="container w-11/12 mx-auto mt-12 mb-12">
+        <section class="relative  mt-12 mb-12">
+            <img class="absolute left-[-50px] top-[-24px] w-auto h-auto" src="./assets/Vector.png" alt="">
+            <div class="grid gap-3 grid-cols-1 lg:grid-cols-2">
+                <div class="flex gap-3 flex-col justify-start">
+                    <a href=""><button class="btn bg-white mt-2 rounded-full"><i class="fa-solid fa-arrow-right"></i>
+                            About Us</button></a>
+                    <h2 class="text-5xl font-extrabold">We design thoughtful, liveable spaces</h2>
+                    <p>We design thoughtful, livable spaces that prioritize comfort and functionality. Each area is
+                        carefully crafted to enhance daily living, fostering a harmonious balance between aesthetics and
+                        practicality for an enriching lifestyle experience.</p>
+                    <div class="flex gap-3 justify-between p-4 bg-white">
+                        <img src="./assets/commercial.png" alt="">
+                        <div>
+                            <h4 class="text-2xl font-semibold">Commercial</h4>
+                            <p>We specialize in creating innovative commercial spaces that enhance productivity and
+                                reflect brand identity.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 justify-between p-4 bg-white">
+                        <img src="./assets/residential.png" alt="">
+                        <div>
+                            <h4 class="text-2xl font-semibold">Residential</h4>
+                            <p>Our residential designs focus on creating warm, inviting homes tailored to individual
+                                lifestyles. </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/Rectangle.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class=" mt-12 mb-12">
             
         </section>
 
     </main>
-    <footer class="container  mx-auto">
-        <section class="w-11/12 mx-auto">
+    <footer class="container w-11/12 mx-auto mt-12">
+        <section class="">
 
         </section>
 
