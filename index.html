@@ -1,53 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Tailwind DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/9427a11101.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        primary: '#ABEF5F',
+                        secondary: '#ABEF5F80',
+                        tertiary: '#ABEF5F33',
+                        gray6: '#212121',
+                        gray1: '#E9E9E9',
+                        rgb: 'rgb(28, 28, 28)',
+                    },
+                    fontFamily: {
+                        Manrope: ['Manrope', 'Arial', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        team: 'url(./assets/bg.jpg)',
+
                     }
                 }
             }
         }
+
     </script>
+    <style type="text/tailwindcss">
+
+    </style>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">                
-                    <a href="#" class="text-xl">Rinterio</a>
+<body class="font-Manrope">
+    <header class="container mx-auto">
+        <nav class="w-11/12 mx-auto">
+            <div class="navbar mx-auto flex gap-3 justify-between items-center">
+                <div class="flex gap-3">
+                    <a href="#" class="text-3xl"><i class="fa-solid fa-circle-arrow-up rotate-45 text-primary bg-rgb rounded-full"></i><span>Rinterio</span></a>
                 </div>
-                <div class="flex justify-evenly gap-4">
-                    <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1">
-                            <li><a>Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>Blogs</a></li>
-                            <li><a>Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="navbar-end hidden lg:block">
-                        <a class="btn">Book Consult</a>
-                    </div>
+
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="hidden lg:block">
+                    <button class="btn bg-primary rounded-full">Book Consult<i class="fa-solid fa-circle-arrow-up rotate-45"></i></button>
                 </div>
             </div>
+            <section class="">
+
+            </section>
         </nav>
     </header>
-    <main>
+    <main class="container mx-auto">
+        <section class="w-11/12 mx-auto">
+            
+        </section>
 
     </main>
-    <footer>
+    <footer class="container  mx-auto">
+        <section class="w-11/12 mx-auto">
+
+        </section>
 
     </footer>
 </body>
