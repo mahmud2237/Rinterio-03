@@ -26,6 +26,10 @@
                         gray6: '#212121',
                         rgb1: 'rgb(28, 28, 28)',
                         white: '#FFF',
+                        b1: '#E7C1D3',
+                        b2: '#EFDA6E',
+                        b3: '#A4DAC3',
+                        b4: '#77AAEA',
                     },
                     fontFamily: {
                         Manrope: ['Manrope', 'Arial', 'sans-serif'],
@@ -46,14 +50,12 @@
 
 <body class="font-Manrope">
     <!-- Header Section Starts Here -->
-    <header class="container w-11/12 mx-auto mb-12">
+    <header class="container w-11/12 mx-auto mb-[100px]">
         <nav>
             <div class="navbar mx-auto flex justify-between items-center">
                 <div class="flex gap-3">
-                    <a href="#" class="text-3xl font-extrabold"><i
-                            class="fa-solid fa-circle-arrow-up rotate-45 text-primary bg-rgb1 rounded-full"></i><span>Rinterio</span></a>
+                    <a href="#" class="text-2xl items-center lg:text-3xl font-extrabold"><i class="fa-solid fa-circle-arrow-up rotate-45 text-primary bg-rgb1 rounded-full"></i><span>Rinterio</span></a>
                 </div>
-
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-rgb1">
                         <li><a>Home</a></li>
@@ -76,7 +78,7 @@
             <!-- Header content here -->
             <section class="flex gap-5 flex-col justify-center items-center">
                 <img src="./assets/banner.png" alt="">
-                <h1 class="text-7xl font-black text-center">A barn house of this design has a striking appearance</h1>
+                <h1 class="text-5xl lg:text-7xl font-black text-center">A barn house of this design has a striking appearance</h1>
                 <p class="font-normal text-center">A barn house of this design boasts a striking appearance with its
                     tall, gabled roof and expansive windows. The blend of traditional materials and contemporary
                     elements creates a captivating, warm, and inviting atmosphere.</p>
@@ -85,14 +87,14 @@
             </section>
         </nav>
     </header>
-    <main class="container w-11/12 mx-auto mt-12 mb-12">
-        <section class="relative  mt-12 mb-12">
+    <main class="container w-11/12 mx-auto mb-[100px]">
+        <section class="relative mt-12 mb-12">
             <img class="absolute left-[-50px] top-[-24px] w-auto h-auto" src="./assets/Vector.png" alt="">
-            <div class="grid gap-3 grid-cols-1 lg:grid-cols-2">
+            <div class="grid gap-3 grid-cols-1 lg:grid-cols-2 place-items-center">
                 <div class="flex gap-3 flex-col justify-start">
                     <a href=""><button class="btn bg-white mt-2 rounded-full"><i class="fa-solid fa-arrow-right"></i>
                             About Us</button></a>
-                    <h2 class="text-5xl font-extrabold">We design thoughtful, liveable spaces</h2>
+                    <h2 class="text-4xl lg:text-5xl font-extrabold">We design thoughtful, liveable spaces</h2>
                     <p>We design thoughtful, livable spaces that prioritize comfort and functionality. Each area is
                         carefully crafted to enhance daily living, fostering a harmonious balance between aesthetics and
                         practicality for an enriching lifestyle experience.</p>
@@ -118,7 +120,34 @@
                 </div>
             </div>
         </section>
-        <section class=" mt-12 mb-12">
+        <section class="flex gap-5 flex-col justify-center items-center mb-12">
+            <a href=""><button class="btn bg-white mt-2 rounded-full"><i class="fa-solid fa-arrow-right"></i>How We Works</button></a>
+            <h3 class="text-4xl lg:text-5xl font-medium">Our Works Process</h3>
+            <p>Our works process is designed to ensure efficiency and creativity in every project. We begin by visualizing the desired outcome, collaborating closely with clients to understand their needs and preferences.</p>
+            <div class="lg:flex gap-6 lg:gap-3 justify-between items-center">
+                <div class="bg-b1 h-15  mx-3 my-3 p-6 rounded-lg">
+                    <img class="object-none" src="./assets/concept.png" alt="">
+                    <h4 class="text-xl font-medium">Concept</h4>
+                    <p>Our concept phase involves brainstorming innovative ideas that align with client visions. We explore various styles, functionalities, and layouts to create a foundational design direction.</p>
+                </div>
+                <div class="bg-b2 h-15 mx-3 my-3 p-6 rounded-lg">
+                    <img class="object-none" src="./assets/flow-chart.png" alt="">
+                    <h4 class="text-xl font-medium">Design Process</h4>
+                    <p>The design process translates concepts into detailed plans. We create sketches, 3D models, and specifications, ensuring functionality and aesthetics harmonize in the final design.</p>
+                </div>
+                <div class="bg-b3 h-15 mx-3 my-3 p-6 rounded-lg">
+                    <img class="object-none" src="./assets/vision.png" alt="">
+                    <h4 class="text-xl font-medium">Supervision</h4>
+                    <p>During supervision, we oversee the project’s execution, ensuring adherence to design specifications and quality standards. Regular site visits and communication keep the project on track.</p>
+                </div>
+                <div class="bg-b4 h-15 mx-3 my-3 p-6 rounded-lg">
+                    <img class="object-none" src="./assets/budget-planning.png" alt="">
+                    <h4 class="text-xl font-medium">Budget Planning</h4>
+                    <p>Budget planning is crucial for project success. We develop a comprehensive budget, considering materials, labor, and contingencies, ensuring transparent financial management throughout the project.</p>
+                </div>
+            </div>
+        </section>
+        <section>
             
         </section>
 
